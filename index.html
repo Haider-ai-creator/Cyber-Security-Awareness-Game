@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div id="feedback" class="hidden feedback-box"></div>
+  <div id="roleplay-feedback" class="hidden feedback-box"></div>
+  
+
+
+  <div class="game-container">
+    <header>
+      <h1>Cybersecurity Awareness Game</h1>
+      <p>Test your knowledge about staying safe online!</p>
+      <div class="difficulty-buttons">
+        <button id="quiz-btn" class="btn">Start Quiz</button>
+        <button id="roleplay-btn" class="btn">Start Role-Play</button>
+      </div>
+    </header>
+  
+    <!-- Teacher Dashboard Section -->
+    <section id="teacher-section" class="hidden">
+      <h2>Teacher's Dashboard</h2>
+      <label for="question-count">Number of questions to add (Max 10):</label>
+      <input type="number" id="question-count" max="20" value="1">
+      <button id="add-question-btn" class="btn">Add Questions</button>
+      <button id="start-quiz-teacher" class="btn">Start Quiz</button>
+  
+      <h3>Current Questions:</h3>
+      <ul id="question-list"></ul>
+  
+      <!-- Add New Question Form -->
+      <div id="new-question-form">
+        <h3>Add a New Question</h3>
+        <label for="question-text">Question Text:</label>
+        
+        <input type="text" id="question-text" placeholder="Enter your question">
+  
+        <label for="answer1">Answer 1:</label>
+        <input type="text" id="answer1" placeholder="Enter first answer">
+  
+        <label for="answer2">Answer 2:</label>
+        <input type="text" id="answer2" placeholder="Enter second answer">
+  
+        <label for="answer3">Answer 3:</label>
+        <input type="text" id="answer3" placeholder="Enter third answer">
+      
+        <label for="correct-answer">Correct Answer:</label>
+        <select id="correct-answer">
+          <option value="1">Answer 1</option>
+          <option value="2">Answer 2</option>
+          <option value="3">Answer 3</option>
+        </select>
+        
+        <button id="save-question-btn" class="btn">Save Question</button>
+      </div>
+    </section>
+  
+    <!-- Quiz Section -->
+    <section id="quiz-container" class="hidden">
+      <div class="question-box">
+        <h2 id="question">Question will appear here</h2>
+        <ul id="answers" class="answers">
+          <!-- Answer buttons will be dynamically inserted here -->
+        </ul>
+      </div>
+      <button id="next-btn" class="btn hidden">Next</button>
+    </section>
+  
+    <!-- Role-Play Section -->
+    <section id="roleplay-container" class="hidden">
+      <div class="scenario-box">
+        <h2 id="scenario">Scenario will appear here</h2>
+        <ul id="options" class="options">
+          <!-- Option buttons will be dynamically inserted here -->
+        </ul>
+      </div>
+      <div id="feedback" class="feedback hidden"></div>
+<div id="roleplay-feedback" class="feedback hidden"></div>
+
+      <button id="continue-btn" class="btn hidden">Continue</button>
+    </section>
+  
+    <footer>
+      <p>&copy; 2025 Cybersecurity Awareness Initiative By Ali Haider From IUB</p>
+    </footer>
+  </div>
+  
+  
+    
+    <script src="first.js"></script>
+</body>
+</html>
